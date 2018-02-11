@@ -1,13 +1,15 @@
 package com.BestPay.entity;
 
-import org.apache.ibatis.cache.Cache;
-
 import java.io.Serializable;
 
-public class userEnity implements Serializable {
+public class userEnity implements Serializable{
     private int userID;
     private String userName;
     private String password;
+    private  String sex;
+
+    public  String getSex(){return sex;}
+    public  void  setSex(String sex){this.sex=sex;}
 
     public int getUserID() {
         return userID;
@@ -31,5 +33,11 @@ public class userEnity implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    @Override
+    public String toString() {
+        return "userEnity [userID=" + userID + ", userName=" + userName + ", password="
+                + password + "]";
     }
 }

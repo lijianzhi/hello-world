@@ -11,5 +11,4 @@ import java.util.Map;
 public interface UserDao {
     public  List<userEnity> getAllUsers();
     public void delete(Integer id);
-
 }
